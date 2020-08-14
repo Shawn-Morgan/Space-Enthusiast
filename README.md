@@ -28,3 +28,35 @@ COVID Tracking App
 ### MVP 1.0  is search functionality with input boxes appropriate returned information in grid format
 ### MVP 2.0 is adding map search visualizations and additional enhancements to web app
 
+## User Flows (Draft 1.0) --> 
+
+User has 2 search routes:
+By entering zip code and date selection input box
+Or
+By selecting location on map viz and data selection input box
+
+User Flow 1 (MVP 1.0)
+User reaches site…
+User enters zip code to search by cases
+User select date range 
+--data selection is by calendar pop-out???
+Clicks on search
+--app calls relevant apis…
+--Information is returned in a grid…
+Total deaths (by the zip code location)
+Total hospitalizations
+Total infections
+Total current contact tracing
+
+User Flow 2 (MVP 2.0)
+User reaches site…
+User selects location on map
+User select date range 
+--data selection is by calendar pop-out???
+Clicks on search
+--app calls relevant apis…
+--Information is returned in a grid…
+Total deaths (by the zip code location)
+Total hospitalizations
+Total infections
+Total current contact tracing
