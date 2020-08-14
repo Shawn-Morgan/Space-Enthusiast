@@ -1,5 +1,5 @@
-# TemporallyInsaneProject1
-COVID Tracking App
+# Project 1 - COVID19 Tracking App
+
 
 # Purpose is to develop an application that allows for users to look at covid cases by county, state and national along with positivity rates over time...
 
