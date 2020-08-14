@@ -1,17 +1,26 @@
 # TemporallyInsaneProject1
-project 1
+COVID Tracking App
 
-# Purpose is to develop an application that uses political candidate data and COVID19 data to allow for searches and correlerations between levels of COVID cases and politcal registrations for certain areas. 
+# Purpose is to develop an application that allows for users to look at covid cases by county, state and national along with positivity rates over time...
 
 # Team members
+## Catherine
+## Josh
+## Sahin
+## Shawn
 
-Audience: U.S. Voter
-Compare Covid-19 positive infection count and rate vs current voter registration numbers/Presidential Candidate Polls to view a correlation. Does a higher infection count/rate correlate to lower voter registration and or correlate to a specific candidate?  
-Why: Better understand if candidate’s policies or standpoints will have a negative effect on the infection rate after the election, in turn having an effect on the US economy.
-
-## As a voter ... i want to ... so that...
+## As a concerned citizen I want to be able to see COVID information by county, state and/or nationally through an easy to use and understand web site with compelling visualizations so that I would be better informed to make decisions for my family during the pandemic. 
 
 ### Features
+#### provide reference information on how to use the site along with where the data was source from to improve trust and transparency in results for the user
+#### search by county, state and/or nationally
+#### search by zip code 
+#### search by map visualization
+#### select To and From dates in search 
+#### enter age range search (10 year ranges) 
+#### number of covid cases, total deaths, hospitalizations, age groups, contact tracers - tracking individuals in quarantine currently 
 
 ### Technology 
+#### html, JS, Css, style framework - something other than bootstrap, D3 (JS viz)
+#### API's ...
 
