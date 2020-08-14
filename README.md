@@ -28,6 +28,9 @@ COVID Tracking App
 ### MVP 1.0  is search functionality with input boxes appropriate returned information in grid format
 ### MVP 2.0 is adding map search visualizations and additional enhancements to web app
 
+## Wireframe
+
+
 ## User Flows (Draft 1.0) --> 
 
 User has 2 search routes:
