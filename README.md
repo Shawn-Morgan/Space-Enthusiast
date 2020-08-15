@@ -1,65 +1,38 @@
-# Project 1 - COVID19 Tracking App
+# Mars and ISS Space Enthusiast  
+## Welcome to our Mars and ISS Space Enthusiast where our goal is to feed the curisity of those interested in Space, Mars and ISS. Enjoy!
 
+# User Story
+### As a space and mars enthusiast I want to see interesting information on ISS location and Mars related information so that my curiosity if satisfied
 
-# Purpose is to develop an application that allows for users to look at covid cases by county, state and national along with positivity rates over time...
+# User Story - Detailed
+## As an enthusiast, I want to go to a web site and click on a search button that generates Mars images of interest as well as Mars weather information so that I feed my curiosity
+### Generate 3 Mars images randomly
+#### API
+### Generate current Mars weather conditions for today
+#### API
 
-# Team members
-## Catherine
-## Josh
-## Sahin
-## Shawn
+## As an enthusiast, I want to go to a web site and click a search button that generates current ISS location information as well as 3 satellite images 
+### Generate current ISS location
+#### API
+### Generate 3 satellite images randomly
+#### API
+		
+## Reset button that will reset the page allow for a newly generated information
 
-## As a concerned citizen I want to be able to see COVID information by county, state and/or nationally through an easy to use and understand web site with compelling visualizations so that I would be better informed to make decisions for my family during the pandemic. 
+# Design Factors
+## Make the page visually appealing by with color scheme, background images, color palate, etc that represent space exploration
+## Static image of Mars next to a search button for Mars information
+### Have a link to Mars Wikipedia or other with explanation of the red planet
+## Static image of ISS next to a search button for ISS and satellite image information
+### Have a link to ISS Wikipedia or other with explanation of the space station 
 
-## Features
-### provide reference information on how to use the site along with where the data was source from to improve trust and transparency in results for the user
-### search by county, state and/or nationally
-### search by zip code 
-### search by map visualization
-### select To and From dates in search 
-### enter age range search (10 year ranges) 
-### number of covid cases, total deaths, hospitalizations, age groups, contact tracers - tracking individuals in quarantine currently 
+# MVP's 
+## MVP 1.0
+### Mars images and weather
+### ISS location & images
 
-## Technology --> 
-### html, JS, Css, style framework - something other than bootstrap, D3 (JS viz)
-### API's ...
-
-## MVP's --> 
-### MVP 1.0  is search functionality with input boxes appropriate returned information in grid format
-### MVP 2.0 is adding map search visualizations and additional enhancements to web app
-
-## Wireframe
-https://github.com/Shawn-Morgan/TemporallyInsaneProject1/blob/master/Covid.PNG
-
-## User Flows (Draft 1.0) --> 
-
-User has 2 search routes:
-By entering zip code and date selection input box
-Or
-By selecting location on map viz and data selection input box
-
-User Flow 1 (MVP 1.0)
-User reaches site…
-User enters zip code to search by cases
-User select date range 
---data selection is by calendar pop-out???
-Clicks on search
---app calls relevant apis…
---Information is returned in a grid…
-Total deaths (by the zip code location)
-Total hospitalizations
-Total infections
-Total current contact tracing
-
-User Flow 2 (MVP 2.0)
-User reaches site…
-User selects location on map
-User select date range 
---data selection is by calendar pop-out???
-Clicks on search
---app calls relevant apis…
---Information is returned in a grid…
-Total deaths (by the zip code location)
-Total hospitalizations
-Total infections
-Total current contact tracing
+## MVP 2.0
+### Add top 5 articles about 'Nasa' / 'Mars'
+### Add interesting fact of the day about Mars / ISS 
+### Add SpaceX facts and launch dates
+### Add e-mail with random Mars fact
