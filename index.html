@@ -9,7 +9,14 @@
   <!-- Compressed CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
-  
+  <style>
+    .imageCl {
+    max-width: 1800px;
+    max-height: 867px;
+    
+}
+
+  </style>
 
 
 </head>
@@ -23,28 +30,33 @@
     <ul class="orbit-container">
       <li class="is-active orbit-slide">
         <figure class="orbit-figure">
-          <img class="orbit-image imageCl" src="https://get.foundation/sites/docs/assets/img/orbit/03.jpg" alt="Space">
+         
+          <video class="orbit-image imageCl"  autoplay muted loop alt="Space"> 
+            <source src="https://cdn.videvo.net/videvo_files/video/free/2012-07/small_watermarked/hd1992_preview.webm"> 
+          </video>
+          
+            
           <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
         </figure>
       </li>
       <li class="orbit-slide">
         <figure class="orbit-figure">
-          <img class="orbit-image imageCl" src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Space">
+          <img class="orbit-image imageCl" src="https://thumbs-prod.si-cdn.com/BOmlweNlQn9qFZzi58MBWOAjNMI=/fit-in/1600x0/https://public-media.si-cdn.com/filer/b8/85/b8855ec1-9695-478d-b796-6130d6f32ff8/12g_on2014_mastcamintovalley_live-1.jpg" alt="Space">
           <figcaption class="orbit-caption">Lets Rocket!</figcaption>
         </figure>
       </li>
       <li class="orbit-slide">
         <figure class="orbit-figure">
-          <img class="orbit-image imageCl" src="https://get.foundation/sites/docs/assets/img/orbit/01.jpg" alt="Space">
+          <img class="orbit-image imageCl" src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2003/05/artist_s_impression_of_the_completed_international_space_station/9874982-3-eng-GB/Artist_s_impression_of_the_completed_International_Space_Station_pillars.jpg" alt="Space">
           <figcaption class="orbit-caption">Encapsulating</figcaption>
         </figure>
       </li>
-      <li class="orbit-slide">
+      <!-- <li class="orbit-slide">
         <figure class="orbit-figure">
           <img class="orbit-image" src="https://get.foundation/sites/docs/assets/img/orbit/02.jpg" alt="Space">
           <figcaption class="orbit-caption">Outta This World</figcaption>
         </figure>
-      </li>
+      </li> -->
     </ul>
   </div>
   <nav class="orbit-bullets">
@@ -54,7 +66,7 @@
     </button>
     <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
     <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+    <!-- <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button> -->
   </nav>
 </div>
 
