@@ -1,0 +1,35 @@
+.container {
+
+margin-left: 30%;
+
+
+}
+
+
+#mapid {
+    
+height: 400px;
+width: 500px
+}
+
+
+.astroNames {
+
+        word-wrap: normal;
+        padding: 10px;
+
+}
+
+a {
+    font-size: 15px; 
+}
+
+.passTime {
+    padding-right: 500px;
+    word-wrap: normal;
+}
+
+.passHeader {
+    padding-top: 10px;
+}
+
