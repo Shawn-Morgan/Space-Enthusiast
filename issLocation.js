@@ -77,7 +77,7 @@ function moveISS () {
             
            
     });
-        setTimeout(moveISS, 5000); 
+        // setTimeout(moveISS, 5000); 
     
 
 }
