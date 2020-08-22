@@ -8,6 +8,15 @@
 
     <title>Space-Mars Rover Photos</title>
 
+    <style type="text/css">
+        button,
+        div,
+        form,
+        input {
+            margin: 10px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -16,7 +25,6 @@
     <!--dump retrieved data here-->
 
     <div id="photos"></div>
-
 
     <div class="container">
         <div class="card-body">
@@ -44,10 +52,10 @@
                 </div>
 
                 <!-- Here we capture the End Year Parameter -->
-                <div class="form-group">
+                <!--<div class="form-group">
                     <label for="end-year">Enter "Earth Date" to search by:</label>
                     <input type="date" class="form-control" id="year">
-                </div>
+                </div>-->
 
                 <!-- Here we have our final submit button -->
                 <button type="submit" class="btn btn-default" id="run-search">
@@ -55,7 +63,9 @@
                 <button class="btn btn-default" id="clear-all">
                     <i class="fa fa-trash"></i> Clear Results</button>
 
-                <div><h3>For more information on NASA Rover Mission, visit ...</h3></div>
+                <div>
+                    <h3>For more information on NASA Rover Mission, visit ...</h3>
+                </div>
 
             </form>
         </div>
@@ -77,8 +87,7 @@
         crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- custom script -->
     <script src="marsRoverPhotos.js"></script>
 
