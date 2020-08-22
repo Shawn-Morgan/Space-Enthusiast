@@ -18,28 +18,28 @@
 // });
 
 ////////////////////////
-//event listner...
+//event listner rover PHOTOS
 $("#run-search").on("click", function(event) {
     event.preventDefault();
     //refers to the button that was clicked
-    var rover = $(this).attr("data-name");
+    //var rover = $(this).attr("data-name");
     //APIkey
     var nasaApiKey = "h2ElaeW9thH3j4eYaQySO8pbLQCzsK6aeiYYd3sU"
-    //URL to search nasa
-
     var roverName = $("#rover").val()
     var roverCamera = $("#rovercamera").val()
-    var earthDay = $("#year").val()
+    //var earthDay = $("#year").val()
 
+    //URL to search nasa
     //query by date
-    queryMarsRoverUrlByDate = "https://api.nasa.gov/mars-photos/api/v1/rovers/" + roverName + "/photos?earth_date=" + earthDay + "&camera=" + roverCamera + "&api_key=" + nasaApiKey
+    //queryMarsRoverUrlByDate = "https://api.nasa.gov/mars-photos/api/v1/rovers/" + roverName + "/photos?earth_date=" + earthDay + "&camera=" + roverCamera + "&api_key=" + nasaApiKey
     //+manifest 
-    queryMarsRoverManifest = "https://api.nasa.gov/mars-photos/api/v1/manifests/" + roverName + "?&api_key=" + nasaApiKey
+    //queryMarsRoverManifest = "https://api.nasa.gov/mars-photos/api/v1/manifests/" + roverName + "?&api_key=" + nasaApiKey
     //query sol=100
     queryMarsRoverUrlBySol = "https://api.nasa.gov/mars-photos/api/v1/rovers/" + roverName + "/photos?sol=100&camera=" + roverCamera + "&api_key=" + nasaApiKey
-    console.log(queryMarsRoverUrlByDate);
+    
+    //console.log(queryMarsRoverUrlByDate);
     console.log("------------------------------------");
-    console.log(queryMarsRoverManifest);
+    //console.log(queryMarsRoverManifest);
     console.log("------------------------------------");
     console.log(queryMarsRoverUrlBySol);
 
@@ -76,7 +76,69 @@ $("#run-search").on("click", function(event) {
 
 });
 
+//event listner for mission MANIFEST
+$("#run-manifest").on("click", function(event) {
+    event.preventDefault();
+    //refers to the button that was clicked
+    var manifest = $(this).attr("data-name");
+    //APIkey
+    var nasaApiKey = "h2ElaeW9thH3j4eYaQySO8pbLQCzsK6aeiYYd3sU"
+    var roverName = $("#rovermanifest").val()
 
+    //URL to search nasa
+    //query by date
+    //queryMarsRoverUrlByDate = "https://api.nasa.gov/mars-photos/api/v1/rovers/" + roverName + "/photos?earth_date=" + earthDay + "&camera=" + roverCamera + "&api_key=" + nasaApiKey
+    //+manifest 
+    queryMarsRoverManifest = "https://api.nasa.gov/mars-photos/api/v1/manifests/" + roverName + "?&api_key=" + nasaApiKey
+    //query sol=100
+    //queryMarsRoverUrlBySol = "https://api.nasa.gov/mars-photos/api/v1/rovers/" + roverName + "/photos?sol=100&camera=" + roverCamera + "&api_key=" + nasaApiKey
+    
+    //console.log(queryMarsRoverUrlByDate);
+    console.log("------------------------------------");
+    console.log(queryMarsRoverManifest);
+    console.log("------------------------------------");
+    //console.log(queryMarsRoverUrlBySol);
+
+    //perform the ajax request
+    $.ajax({
+        url: queryMarsRoverManifest,
+        method: "GET"
+        })
+            //data returned from api
+            .then(function(response) {
+            console.log(response);
+
+            // Transfer content to HTML
+            $(".name").text("Rover Name: " + response.photo_manifest.name);
+            $(".status").text("Rover Status: " + response.photo_manifest.status);
+            $(".launch_date").text("Rover Launch Date: " + response.photo_manifest.launch_date);
+            $(".landing_date").text("Rover Landing Date: " + response.photo_manifest.landing_date);
+            $(".max_date").text("Interesting Fact: the most recent Earth Date from which photos exist was: " + response.photo_manifest.max_date);
+
+            //e...
+            //filter function
+            // function checkCamera(photo) {
+            //     return photo.camera.name == roverCamera;
+            // }
+
+            // response.photos.filter(checkCamera);
+
+            // $("#photos").html("<img src=" + response.photos[0].img_src + ">");
+            // console.log(response.photos[0].img_src);
+            // var photosDiv = $("<div id='#photos'>");
+
+            // // Retrieving the URL for the image
+            // var imgURL = response.photos[0].img_src;
+
+            // // Creating an element to hold the image
+            // var image = $("<img>").attr("src", imgURL);
+        
+            // // Appending the image
+            // photosDiv.append(image);
+
+    });
+
+});
 
 
 //pulls back all photos available, but would need to limit photos displayed...

@@ -22,12 +22,11 @@
 <body>
     <h1>Mars Rover Photos</h1>
 
-    <!--dump retrieved data here-->
-
-    <div id="photos"></div>
-
+    <!--PHOTO search-->
     <div class="container">
         <div class="card-body">
+
+            <h2>Select Mars Rover and Camera</h2>
 
             <!-- Here we create an HTML Form for handling the inputs-->
             <form role="form">
@@ -63,12 +62,74 @@
                 <button class="btn btn-default" id="clear-all">
                     <i class="fa fa-trash"></i> Clear Results</button>
 
-                <div>
-                    <h3>For more information on NASA Rover Mission, visit ...</h3>
-                </div>
+                <br>
+                <br>
+                <br>
 
             </form>
         </div>
+    </div>
+    
+    <!--dump retrieved PHOTO data here-->
+    <div id="photos"></div>
+
+
+    <!--mission MANIFEST status-->
+    <div class="container">
+        <div class="card-body">
+
+            <h2>Select Mars Rover for Mission Status</h2>
+
+            <!-- Here we create an HTML Form for handling the inputs-->
+            <form role="form">
+
+                <!-- Here we create the text box for capturing the search term-->
+                <div class="form-group">
+                    <label for="search">Select Rover for Mission Manifest Status (Curiosity, Opportunity, Spirit):</label>
+                    <select id="rovermanifest" name="rovermanifest">
+                        <option value="Curiosity">Curiosity</option>
+                        <option value="Opportunity">Opportunity</option>
+                        <option value="Spirit">Spirit</option>
+                    </select>
+                </div>
+
+                <!-- Here we have our final submit button -->
+                <button type="submit" class="btn btn-default" id="run-manifest">
+                    <i class="fa fa-search"></i> Search</button>
+                <button class="btn btn-default" id="clear-all">
+                    <i class="fa fa-trash"></i> Clear Results</button>
+
+                <br>
+                <br>
+                <br>
+    
+
+            </form>
+        </div>
+    </div>
+
+    <!--dump retrieved MANIFEST data here-->
+    <div id="manifest"></div>
+    <ul>
+        <div class="name"></div>
+        <div class="status"></div>
+        <div class="launch_date"></div>
+        <div class="landing_date"></div>
+        <div class="max_date"></div>
+    </ul>
+
+    <!--additional links-->
+    <div class="extrainfo">
+        <div>
+            <h2>For more information on NASA Rover Mission, visit ...</h2>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Mars">Mars Wikipedia</a>
+                </li>
+                <li>
+                    <a href="https://www.nasa.gov/mission_pages/mars/missions/index.html">Mars Today: Robotic Exploration</a>
+                </li>
+        </div>
+
     </div>
 
     <!-- jquery -->
