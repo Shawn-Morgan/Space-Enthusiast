@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+
+
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Mars</title>
+
+
+</head>
+
+<body>
+
+  <p>Weather provided by NASA's Mars lander <a href="https://mars.nasa.gov/insight/mission/overview/">InSight</a></p>
+  <p>InSight is the first lander on Mars with a mission to explore the deep interior of the planet.  It is located in the Elysium Planitia Region of Mars. The objective is to investigate the processes that shaped the rocky planets of the inner solar system.</p>
+  
+  <!-- Current Mars Weather -->
+    <div id ="marsCurrentWeather"></div>
+
+  <!-- Space for Selected Weather Date -->
+    <div id="marsWeatherSearch"></div>
+
+
+    <!-- Date Dropdown to for 2020 Weather -->
+    <label for="sol">Enter "2020 Earth Date":</label>
+  <span>
+      <select name="month" id="month">
+         <option value="01">January</option>
+         <option value="02">February</option>
+         <option value="03">March</option>
+         <option value="04">April</option>
+         <option value="05">May</option>
+         <option value="06">June</option>
+         <option value="07">July</option>
+         <option value="08">August</option>
+         <!-- <!-- <option value="09">September</option>
+         <option value="10">October</option>
+         <option value="11">November</option>
+         <option value="12">December</option> -->
+      </select> 
+ </span>
+ <span>
+      <select name="day" id="day">
+           <option value="01">1</option>
+           <option value="02">2</option>
+           <option value="03">3</option>
+           <option value="04">4</option>
+           <option value="05">5</option>
+           <option value="06">6</option>
+           <option value="07">7</option>
+           <option value="08">8</option>
+           <option value="09">9</option>
+           <option value="10">10</option>
+           <option value="11">11</option>
+           <option value="12">12</option>
+           <option value="13">13</option>
+           <option value="14">14</option>
+           <option value="15">15</option>
+           <option value="16">16</option>
+           <option value="17">17</option>
+           <option value="18">18</option>
+           <option value="19">19</option>
+           <option value="20">20</option>
+           <option value="21">21</option>
+           <option value="22">22</option>
+           <option value="23">23</option>
+           <option value="24">24</option>
+           <option value="25">25</option>
+           <option value="26">26</option>
+           <option value="27">27</option>
+           <option value="28">28</option>
+           <option value="29">29</option>
+           <option value="30">30</option>
+           <option value="31">31</option>
+      </select>
+ </span> 
+ <!-- <span>
+      <select name="year" id="year">
+       <option value="2020">2020</option>
+      </select>
+ </span> -->
+
+<!-- Button for Weather Date Search -->
+ <button  id="marsUpdateWeather" class="fa fa-space-shuttle btn btn-primary"></button>
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="marsWeather.js"></script> 
+    
+
+
+</body>
+</html>
+
