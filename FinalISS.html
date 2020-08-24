@@ -1,127 +1,185 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ISS| Welcome</title>
-    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-  </head>
-  <body>
 
-    <!-- Start Top Bar -->
-    <div class="top-bar">
-      <div class="top-bar-left">
-   
-      </div>
-      <div class="top-bar-left">
-        <ul class="menu">
-          <li><a href="indexx.html">Main Page</a></li>
-          <li><a href="FinalISS.html">ISS</a></li>
-          <li><a href="FinalMars.html">Mars</a></li>
-         
-        </ul>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>ISS| Welcome</title>
+
+  <!--Code for Foundation-->
+  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <!--Code for Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron&display=swap" rel="stylesheet">
+
+  <!-- Need for Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <!-- Need for Map -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+  <!-- Need for Twitter -->
+  <script async src="https://platform.twitter.com/widgets.js"></script>
+
+  <!--Code for External CSS-->
+  <link href="FinalISS.css" type="text/css" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+
+  <!-- Start Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+
     </div>
-    <!-- End Top Bar -->
+    <div class="top-bar-left">
+      <ul class="menu">
+        <li><a href="indexx.html">Main Page</a></li>
+        <li><a href="#">ISS</a></li>
+        <li><a href="FinalMars.html">Mars</a></li>
 
-    <div class="callout large primary">
-      <div class="row column text-center">
-        <h1>International Space Station</h1>
-      </div>
-    </div>
-
-    <div class="row" id="content">
-      <div class="medium-8 columns">
-        <div class="blog-post">
-          <h3>Awesome blog post title <small>3/6/2015</small></h3>
-          <img class="thumbnail" src="https://placehold.it/850x350">
-          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-          <div class="callout">
-            <ul class="menu simple">
-              <li><a href="#">Author: Mike Mikers</a></li>
-              <li><a href="#">Comments: 3</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="blog-post">
-          <h3>Awesome blog post title <small>3/6/2015</small></h3>
-          <img class="thumbnail" src="https://placehold.it/850x350">
-          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-          <div class="callout">
-            <ul class="menu simple">
-              <li><a href="#">Author: Mike Mikers</a></li>
-              <li><a href="#">Comments: 3</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="blog-post">
-          <h3>Awesome blog post title <small>3/6/2015</small></h3>
-          <img class="thumbnail" src="https://placehold.it/850x350">
-          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-          <div class="callout">
-            <ul class="menu simple">
-              <li><a href="#">Author: Mike Mikers</a></li>
-              <li><a href="#">Comments: 3</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="blog-post">
-          <h3>Awesome blog post title <small>3/6/2015</small></h3>
-          <img class="thumbnail" src="https://placehold.it/850x350">
-          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-          <div class="callout">
-            <ul class="menu simple">
-              <li><a href="#">Author: Mike Mikers</a></li>
-              <li><a href="#">Comments: 3</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="medium-3 columns" data-sticky-container>
-        <div class="sticky" data-sticky data-anchor="content">
-          <h4>Categories</h4>
-          <ul>
-            <li><a href="#">Skyler</a></li>
-            <li><a href="#">Jesse</a></li>
-            <li><a href="#">Mike</a></li>
-            <li><a href="#">Holly</a></li>
-          </ul>
-
-          <h4>Authors</h4>
-          <ul>
-            <li><a href="#">Skyler</a></li>
-            <li><a href="#">Jesse</a></li>
-            <li><a href="#">Mike</a></li>
-            <li><a href="#">Holly</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="row column">
-      <ul class="pagination" role="navigation" aria-label="Pagination">
-        <li class="disabled">Previous</li>
-        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-        <li><a href="#" aria-label="Page 2">2</a></li>
-        <li><a href="#" aria-label="Page 3">3</a></li>
-        <li><a href="#" aria-label="Page 4">4</a></li>
-        <li class="ellipsis"></li>
-        <li><a href="#" aria-label="Page 12">12</a></li>
-        <li><a href="#" aria-label="Page 13">13</a></li>
-        <li><a href="#" aria-label="Next page">Next</a></li>
       </ul>
     </div>
+  </div>
+  <!-- End Top Bar -->
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
+  <div class="callout large primary">
+    <div class="row column text-center">
+      <h1>International Space Station</h1>
+    </div>
+  </div>
+
+  <div class="row" id="content">
+    <div class="medium-8 columns">
+
+
+
+      <!--Start of ISS code-------------------------------------------------------------------------------------------->
+      <!-- <div class="blog-post"> -->
+
+
+      <p>The ISS <a href="https://www.nasa.gov/mission_pages/station/main/index.html">(International Space Station)</a>
+        is an orbiting laboratory and construction site that was assembled in low Earth orbit from a mutlinational
+        consortium that was largely led by the United States and Russia. The ISS is host to many scientific experiments
+        in microgravity and the space environment. The ISS also serves as an observatory and low orbit staging base for
+        future missions to the Moon and Mars. </p>
+
+      <div class="container-fluid padding">
+        <div class="row padding">
+
+
+          <!-- These are the divs for the map, coordinates ad astronauts names -->
+          <div class="col-md-5">
+
+            <!--Deleting this div moves the tweets to the side.-->
+            <div class="map-astronauts"></div>
+
+            <!-- div for the ISS Tracking Map: format the map size in css - width and height -->
+            <div id="mapid"></div>
+            <!-- div for the updating coordinates -->
+            <div id="currentLocation"></div>
+            <!-- div for Altitude, velocity and visibility -->
+            <div id="velocity"></div>
+          </div>
+        </div>
+
+
+        <!-- Divs for the Upcoming Pass Time and input box for city name -->
+        <div class="col-md-7">
+          <h2>Upcoming Pass Time: </h2>
+
+          <!-- Need this div in order to diplay the city pass time information -->
+          <div id="passLocation" class="passTime"></div>
+
+          <div class="row form-group form-inline col-md-5" id="" style="padding: 30px;">
+            <!-- Need this div to enter the city name in text box and click button-->
+            <input type="text" name="passCity" class="form-control" id="passCity" placeholder="City Name">
+            <button id="issPass" class="fa fa-space-shuttle btn btn-primary">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!--Code for side bar-->
+    <div class="medium-3 columns" data-sticky-container>
+      <div class="sticky" data-sticky data-anchor="content">
+        <h4>Astronauts On Board</h4>
+        <ul>
+          <li><a href="https://www.nasa.gov/astronauts/biographies/christopher-j-cassidy/biography">Chris
+              Cassidy</a>
+          </li>
+          <li><a href="https://en.wikipedia.org/wiki/Anatoli_Ivanishin">Anatoly Ivanishin</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Ivan_Vagner">Ivan Vagner</a></li>
+        </ul>
+
+        <!-- Anchor for the live twitter feed -->
+
+        <a class="twitter-timeline tw-align-center" href="https://twitter.com/Space_Station?ref_src=twsrc%5Etfw"
+          data-width="320" data-height="400" data-chrome="nofooter"></a>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!--End of Code for Side Bar-->
+
+  <!--End of ISS code-->
+
+
+  <!-- <div class="blog-post">
+    <h3>Awesome blog post title</h3>
+    <img class="thumbnail" src="https://placehold.it/850x350">
+    <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim
+      congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci.
+      Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.
+      Nulla at nulla justo, eget luctus.</p>
+  </div>
+
+  <div class="blog-post">
+    <h3>Awesome blog post title</h3>
+    <img class="thumbnail" src="https://placehold.it/850x350">
+    <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim
+      congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci.
+      Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.
+      Nulla at nulla justo, eget luctus.</p>
+  </div>
+
+  <div class="blog-post">
+    <h3>Awesome blog post title</h3>
+    <img class="thumbnail" src="https://placehold.it/850x350">
+    <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim
+      congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci.
+      Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.
+      Nulla at nulla justo, eget luctus.</p>
+  </div> --> -->
+  
+
+
+
+
+
+  <!--Closing Div for Body-->
+  
+
+
+  <!--jQuery and Foundation links-->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+
+  <!-- Need for Twitter -->
+  <script async src="https://platform.twitter.com/widgets.js"></script>
+  <script src="jscript.js"></script>
+  <script src="issLocation.js"></script>
+</body>
+
 </html>
-
-
-
