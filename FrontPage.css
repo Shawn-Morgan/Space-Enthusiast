@@ -12,6 +12,7 @@
 h1,
 h3,
 h4,
+h2,
 .menu a {
     color: rgb(226, 6, 50);
     text-shadow: 2px 2px 8px rgb(100, 97, 97);
@@ -21,6 +22,7 @@ h4,
 p,
 .menu {
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 .top-bar {
@@ -65,4 +67,20 @@ h3 {
       background-image: url(img/nebula-red-space-4k-od.jpg);
       color: white;
 
+  }
+
+  #flightnews {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  p {
+      font-size: 15px;
+      color: white;
+  }
+
+  h2 {
+    text-align: center;
+    color: rgb(8, 12, 223);
+    text-shadow: 2px 2px 8px rgb(100, 97, 97);
+    font-family: 'Orbitron', sans-serif;
   }
