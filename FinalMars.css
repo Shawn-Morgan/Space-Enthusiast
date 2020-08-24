@@ -1,0 +1,12 @@
+.callout.large.primary {
+    background-image: url(img/3MarsDistance.jpg);
+    background-repeat: no-repeat;
+    background-position: fill;
+    background-size: cover;
+    
+}
+
+
+h1 {
+    color: crimson;
+}
