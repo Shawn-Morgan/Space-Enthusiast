@@ -1,0 +1,311 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mars | Welcome</title>
+    <!--Mars Weather links-->
+    
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+
+
+
+  
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron&display=swap" rel="stylesheet">
+    <link href="FinalMars.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Start Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+
+      </div>
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li><a href="index.html">Main Page</a></li>
+          <li><a href="FinalISS.html">ISS</a></li>
+          <li><a href="#">Mars</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <!-- End Top Bar -->
+
+    <div class="callout large primary">
+      <div class="row column text-center">
+        <h1>Mars</h1>
+      </div>
+    </div>
+
+    <div class="row" id="content">
+      <div class="medium-8 columns">
+        <div class="blog-post">
+          
+
+          
+  <p>Weather provided by NASA's Mars lander <a href="https://mars.nasa.gov/insight/mission/overview/">InSight</a></p>
+  <p>InSight is the first lander on Mars with a mission to explore the deep interior of the planet.  It is located in the Elysium Planitia Region of Mars. The objective is to investigate the processes that shaped the rocky planets of the inner solar system.</p>
+  
+  <!-- Current Mars Weather -->
+    <div id ="marsCurrentWeather"></div>
+
+  <!-- Space for Selected Weather Date -->
+    <div id="marsWeatherSearch"></div>
+
+
+    <!-- Date Dropdown to for 2020 Weather -->
+    <label for="sol">Enter "2020 Earth Date":</label>
+  <span>
+      <select name="month" id="month">
+         <option value="01">January</option>
+         <option value="02">February</option>
+         <option value="03">March</option>
+         <option value="04">April</option>
+         <option value="05">May</option>
+         <option value="06">June</option>
+         <option value="07">July</option>
+         <option value="08">August</option>
+         <!-- <!-- <option value="09">September</option>
+         <option value="10">October</option>
+         <option value="11">November</option>
+         <option value="12">December</option> -->
+      </select> 
+ </span>
+ <span>
+      <select name="day" id="day">
+           <option value="01">1</option>
+           <option value="02">2</option>
+           <option value="03">3</option>
+           <option value="04">4</option>
+           <option value="05">5</option>
+           <option value="06">6</option>
+           <option value="07">7</option>
+           <option value="08">8</option>
+           <option value="09">9</option>
+           <option value="10">10</option>
+           <option value="11">11</option>
+           <option value="12">12</option>
+           <option value="13">13</option>
+           <option value="14">14</option>
+           <option value="15">15</option>
+           <option value="16">16</option>
+           <option value="17">17</option>
+           <option value="18">18</option>
+           <option value="19">19</option>
+           <option value="20">20</option>
+           <option value="21">21</option>
+           <option value="22">22</option>
+           <option value="23">23</option>
+           <option value="24">24</option>
+           <option value="25">25</option>
+           <option value="26">26</option>
+           <option value="27">27</option>
+           <option value="28">28</option>
+           <option value="29">29</option>
+           <option value="30">30</option>
+           <option value="31">31</option>
+      </select>
+ </span> 
+ <!-- <span>
+      <select name="year" id="year">
+       <option value="2020">2020</option>
+      </select>
+ </span> -->
+
+<!-- Button for Weather Date Search -->
+ <button  id="marsUpdateWeather" class="fa fa-space-shuttle btn btn-primary"></button>
+        
+
+
+          <!-- <h3>Awesome blog post title</h3>
+          <img class="thumbnail" src="https://placehold.it/850x350">
+          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p> -->
+        </div>
+        
+        <!--Beginning of Mars Weather Photos Code-->
+        <div class="blog-post">
+
+          <h1>Mars Rover Photos</h1>
+
+    <!--PHOTO search-->
+    <div class="container">
+        <div class="card-body">
+
+            <h2>Select Mars Rover and Camera</h2>
+
+            <!-- Here we create an HTML Form for handling the inputs-->
+            <form role="form">
+
+                <!-- Here we create the text box for capturing the search term-->
+                <div class="form-group">
+                    <label for="search">Select Rover (Curiosity, Opportunity, Spirit):</label>
+                    <select id="rover" name="rover">
+                        <option value="Curiosity">Curiosity</option>
+                        <option value="Opportunity">Opportunity</option>
+                        <option value="Spirit">Spirit</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="rovercamera">Select Rover camera:</label>
+                    <select id="rovercamera" name="rovercamera">
+                        <option value="FHAZ">Front Hazard Avoidance Camera</option>
+                        <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+                        <option value="NAVCAM">Navigation Camera</option>
+                    </select>
+                </div>
+
+                <!-- Here we capture the End Year Parameter -->
+                <!--<div class="form-group">
+                    <label for="end-year">Enter "Earth Date" to search by:</label>
+                    <input type="date" class="form-control" id="year">
+                </div>-->
+
+                <!-- Here we have our final submit button -->
+                <button type="submit" class="btn btn-default" id="run-search">
+                    <i class="fa fa-search"></i> Search</button>
+                <button class="btn btn-default" id="clear-all">
+                    <i class="fa fa-trash"></i> Clear Results</button>
+
+                <br>
+                <br>
+                <br>
+
+            </form>
+        </div>
+    </div>
+
+    <!--dump retrieved PHOTO data here-->
+    <div id="photos"></div>
+
+
+    <!--mission MANIFEST status-->
+    <div class="container">
+        <div class="card-body">
+
+            <h2>Select Mars Rover for Mission Status</h2>
+
+            <!-- Here we create an HTML Form for handling the inputs-->
+            <form role="form">
+
+                <!-- Here we create the text box for capturing the search term-->
+                <div class="form-group">
+                    <label for="search">Select Rover for Mission Manifest Status (Curiosity, Opportunity,
+                        Spirit):</label>
+                    <select id="rovermanifest" name="rovermanifest">
+                        <option value="Curiosity">Curiosity</option>
+                        <option value="Opportunity">Opportunity</option>
+                        <option value="Spirit">Spirit</option>
+                    </select>
+                </div>
+
+                <!-- Here we have our final submit button -->
+                <button type="submit" class="btn btn-default" id="run-manifest">
+                    <i class="fa fa-search"></i> Search</button>
+                <button class="btn btn-default" id="clear-all">
+                    <i class="fa fa-trash"></i> Clear Results</button>
+            </form>
+        </div>
+    </div>
+
+    <!--dump retrieved MANIFEST data here-->
+    <div id="manifest">
+        <ul>
+            <div class="name"></div>
+            <div class="status"></div>
+            <div class="launch_date"></div>
+            <div class="landing_date"></div>
+            <div class="max_date"></div>
+        </ul>
+    </div>
+    
+    <!--additional links-->
+    <div class="extrainfo">
+        <br>
+        <div>
+            <h2>For more information on NASA Rover Mission, visit ...</h2>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Mars">Mars Wikipedia</a>
+            </li>
+            <li>
+                <a href="https://www.nasa.gov/mission_pages/mars/missions/index.html">Mars Today: Robotic
+                    Exploration</a>
+            </li>
+        </div>
+
+    </div>
+
+
+
+
+
+          <!-- <h3>Awesome blog post title</h3>
+          <img class="thumbnail" src="https://placehold.it/850x350">
+          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p> -->
+        </div>
+
+        <div class="blog-post">
+          <!-- <h3>Awesome blog post title</h3>
+          <img class="thumbnail" src="https://placehold.it/850x350">
+          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p> -->
+        </div>
+
+        <div class="blog-post">
+          <!-- <h3>Awesome blog post title</h3>
+          <img class="thumbnail" src="https://placehold.it/850x350">
+          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p> -->
+        </div>
+      </div>
+
+      <div class="medium-3 columns" data-sticky-container>
+        <div class="sticky" data-sticky data-anchor="content">
+          <!-- <h4>Categories</h4>
+          <ul>
+            <li><a href="#">Skyler</a></li>
+            <li><a href="#">Jesse</a></li>
+            <li><a href="#">Mike</a></li>
+            <li><a href="#">Holly</a></li>
+          </ul>
+
+          <h4>Authors</h4>
+          <ul>
+            <li><a href="#">Skyler</a></li>
+            <li><a href="#">Jesse</a></li>
+            <li><a href="#">Mike</a></li>
+            <li><a href="#">Holly</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+
+
+      <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- custom script -->
+    <script src="marsRoverPhotos.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src="marsWeather.js"></script> 
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
+
+
+
