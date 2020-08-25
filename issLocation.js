@@ -1,6 +1,7 @@
 
 
 
+
 //Creating Map Object
 var map = new L.map('mapid'),
     ft = true,
@@ -19,76 +20,81 @@ map.addLayer(markers);
 
 
 
-
 function moveISS () {
 
 
     
-    $.getJSON('http://api.open-notify.org/iss-now.json?callback=?', function(data) {
 
-        var lat = data.iss_position.latitude
-        var lon = data.iss_position.longitude
-       
-                
 
-        //Icon Options
-            var iconOptions = {
-                iconUrl: 'img/iss2.png',
-                iconSize: [35, 35]
-            }
+    $.ajax({
+        url: 'https://cors-anywhere.herokuapp.com/https://api.wheretheiss.at/v1/satellites/25544',
+        dataType: 'json',
+        success: function(data){
+           
         
-        //Creating Custom Icon
-        var customIcon = L.icon(iconOptions);
 
+    var lat = data.latitude
+    var lon = data.longitude
+   
+            console.log(lat)
 
-        //Create Marker Options
-            var markerOptions = {
-                title: "Click ISS For Live Feed",
-                clickable: false,
-                draggable: false,
-                icon: customIcon
-            }
-
-
-            var currLatLng = L.latLng(lat, lon);
-            path.push(currLatLng);
-
-            var polyline = L.polyline(path, {color: 'red', weight: 2, opacity: 1, dashArray: [3,6]});
-            markers.clearLayers();
-
-
-
-           //Creating marker
-           var marker = L.marker(currLatLng, markerOptions);
-                marker.url = 'https://www.ustream.tv/channel/live-iss-stream'
-               
-                
-                marker.on('click', function(){
-                    window.location = (this.url);
-                    });
-                
-                    
-
-            
-           //Add Icon and Tracking Line to Map
-            markers.addLayer(marker);
-            markers.addLayer(polyline);
-                        
-            // Pan to in real time
-            if(ft){   
-                map.panTo([lat, lon]);
-                ft = false;
-               }
-
-            
-    });
-
-
-        setTimeout("moveISS()", 5000); 
+    //Icon Options
+        var iconOptions = {
+            iconUrl: 'img/iss2.png',
+            iconSize: [35, 35]
+        }
     
+    //Creating Custom Icon
+    var customIcon = L.icon(iconOptions);
+
+
+    //Create Marker Options
+        var markerOptions = {
+            title: "Click ISS For Live Feed",
+            clickable: false,
+            draggable: false,
+            icon: customIcon
+        }
+
+
+        var currLatLng = L.latLng(lat, lon);
+        path.push(currLatLng);
+
+        var polyline = L.polyline(path, {color: 'red', weight: 2, opacity: 1, dashArray: [3,6]});
+        markers.clearLayers();
+
+
+
+       //Creating marker
+       var marker = L.marker(currLatLng, markerOptions);
+            marker.url = 'https://www.ustream.tv/channel/live-iss-stream'
+           
+            
+            marker.on('click', function(){
+                window.location = (this.url);
+                });
+            
+                
+
+        
+       //Add Icon and Tracking Line to Map
+        markers.addLayer(marker);
+        markers.addLayer(polyline);
+                    
+        // Pan to in real time
+        if(ft){   
+            map.panTo([lat, lon]);
+            ft = false;
+           }
+        }
+        
+        });
+
+
+    setTimeout("moveISS()", 5000); 
+
 }
 
 moveISS(); 
-
 
 
