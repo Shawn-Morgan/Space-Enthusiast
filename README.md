@@ -1,5 +1,5 @@
 # Mars and ISS Space Enthusiast  
-## Welcome to our Mars and ISS Space Enthusiast where our goal is to feed the curisity of those interested in Space, Mars and ISS. Enjoy!
+## Welcome to our Mars and ISS Space Enthusiast site where our goal is to feed the curisity of those interested in Space, Mars and the International Space Station (ISS). The purpose of this site is to provide a single site that provides information two of the most important NASA missions - Mars and the International Space Station. From this single innovation and usable site, you can traverse Mars rover photos, mission status, ISS location and pass time information. This single portal will not only provide enthosiats with intereting and useful information, but is designed to be single portal to launch to additional sites like assciated Twitter, Wikipedia and NASA exploration mission sites. Start here and enjoy the journey! Enjoy!
 
 # Team
 ## Catherine - front-end
@@ -12,10 +12,10 @@
 
 # User Story - Detailed
 ## As a Mars enthusiast, I want to go to a web site and click on a button that generates Mars images of interest as well as Mars weather information so that I feed my curiosity. 
-### generate 3 Mars images randomly
+### generate Mars images randomly
 ### generate current Mars weather conditions for today
 ### allow for future Mars forecast information (e.g. 10 days out)
-### allow user to take a fun quiz about Mars facts
+
 ### API's -> Mars Rover Photos, InSight: Mars Weather Service API 
 
 ## As an ISS enthusiast, I want to go to a web site and click on a button that generates current ISS location information as well as 3 satellite images 
@@ -35,13 +35,16 @@
 
 # MVP's 
 ## MVP 1.0
-### Mars images and weather
+### Mars rover - pick from 3 and pick from 3 cameras
 ### ISS location & images
 ### Mars weather search - next week weather forecast
-### Mars code quiz - fun quiz with 10 questions randomly generated about Mars
+### Social media links
+### Astronaut information for ISS
+### Helpful links to other sites 
 
 ## MVP 2.0 (stretch goals)
 ### Add top 5 articles about 'Nasa' / 'Mars'
 ### Add interesting fact of the day about Mars / ISS 
 ### Add SpaceX facts and launch dates
 ### Add e-mail with random Mars fact
+### Allow user to take a fun quiz about Mars facts
