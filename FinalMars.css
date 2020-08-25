@@ -61,3 +61,10 @@ h3 {
     color: white;
 
 }
+
+button,
+div,
+form,
+input {
+    margin: 10px;
+}
