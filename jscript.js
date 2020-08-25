@@ -19,7 +19,7 @@ return getCurrentLocation();
 // Current Location of ISS
 function getCurrentLocation(){
 
-    var queryCurrent = "http://api.open-notify.org/iss-now.json"
+    var queryCurrent = "https://cors-anywhere.herokuapp.com/http://api.open-notify.org/iss-now.json"
     var queryAstronaut = "http://api.open-notify.org/astros.json"
     
     
