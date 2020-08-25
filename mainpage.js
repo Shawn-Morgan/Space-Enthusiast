@@ -42,17 +42,12 @@ function getCurrentNews(){
             });
 
         function resultPic(pic) {
-            return "<h1 class='randompic'><img src="  + pic.url + "></h1>" + "<h2> Title: " + pic.title + ", "+ "Date: " + pic.date + "<h2>" + "<p>Explanation: " + "<br>"  + pic.explanation + "</p>"
+            return "<h1 class='randompic'><img src="  + pic.url + ">" + "<embed width='800' height='400' src=" + pic.url  + "></embed>"   + "</h1>" + "<h2> Title: " + pic.title + ", "+ "Date: " + pic.date + "<h2>" + "<p>Explanation: " + "<br>"  + pic.explanation + "</p>"
                     
             }
 
 
-        // function resultsFlight(news) {
-        //     return "<h2>" + news.docs[0].title + "<h2>" + "<p>"  + news.docs[0].published_date + "</p>" + "<p><a href=" + news.docs[0].url + "></a></p>"
-            
-        //     }
-
-
+    
 }
 
 
